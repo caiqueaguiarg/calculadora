@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilo.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1 class="calculadora_titulo">Calculadora</h1>
+    </div>
+    <div class="calculadora">
+        <section class="paragrafo">
+            <p id="avisoErro"></p>
+        </section>
+         <section class="resultado">
+                    <p class="resultado_texto" id="resultadoTotal"></p>
+             </section>
+             <section class="parteBotoes">
+                <button onclick="inserir('+')" class="botao" >+</button>
+                <button onclick="inserir('/')" class="botao">/</button>
+                <button onclick="inserir('*')" class="botao">X</button>
+                </section>
+                <section class="parteBotoes">
+                    <button  onclick="inserir('7')" class="botao">7</button>
+                    <button  onclick="inserir('8')" class="botao">8</button>
+                    <button  onclick="inserir('9')" class="botao">9</button>
+                
+              </section>
+                    <section class="parteBotoes">
+                        <button onclick="inserir('4')" class="botao">4</button>
+                        <button  onclick="inserir('5')" class="botao">5</button>
+                        <button  onclick="inserir('6')" class="botao">6</button>
+                    </section>
+                    <section class="parteBotoes" >
+                        <button  onclick="inserir('1')" class="botao">1</button>
+                        <button  onclick="inserir('2')" class="botao">2</button>
+                        <button  onclick="inserir('3')" class="botao">3</button>
+                    
+                    </section>
+                    <section class="parteBotoes">
+                        <button onclick="inserir('0')" class="botao">0</button>
+                        <button onclick="inserir('-')" class="botao">-</button>
+                        <button onclick="inserir('.')" class="botao">.</button>
+                    </section>
+                    
+                    <section  class="parteBotoes">
+                        <section class="botao2">
+                            <button onclick="limpar() ,limparErro()" class="botao_limpa">C</button>
+                            <button onclick="calcular()" class="botao">=</button>
+                            <button onclick="deletar()" class="botao">D</button>
+                        </section>
+                    </section>
+            </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
